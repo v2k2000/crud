@@ -20,5 +20,35 @@ from posts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+<<<<<<< HEAD
+    path('', views.index),
+    # READ(1)
+    path('posts/<int:id>/',views.detail),
+    # Create
+    path('posts/new/', views.new),
+    path('posts/create/', views.create),
+    # delete
+    path('posts/<int:id>/delete/', views.delete),
+    #update
+    path('posts/<int:id>/edit/',views.edit),
+    path('posts/<int:id>/update/',views.update),
+
+=======
+
+    # Read(All)
+    path('', views.index),
+    # Read(1)
+    path('posts/<int:id>/', views.detail),
+
+    # Create
+    path('posts/new/', views.new),
+    path('posts/create/', views.create),
+
+    # Delete
+    path('posts/<int:id>/delete/', views.delete),
+
+    # Update
+    path('posts/<int:id>/edit/', views.edit),
+    path('posts/<int:id>/update/', views.update),
+>>>>>>> 3654344d10e2e0b936df70d1385f45f556f65bf2
 ]
