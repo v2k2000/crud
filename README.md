@@ -30,3 +30,5 @@ from .models import Post
 
 admin.site.register(Post)
 ```
+
+돌아왔나
